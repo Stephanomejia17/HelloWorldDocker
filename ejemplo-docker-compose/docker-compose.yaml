@@ -6,7 +6,7 @@ services:
       MYSQL_ROOT_PASSWORD: mysql123
       MYSQL_DATABASE: ejemplo-db
       MYSQL_USER: usuario
-      MYSQL_PASSWORD: usuario123
+      MYSQL_PASSWORD: 1234
     ports:
       - "3307:3306"
     volumes:
@@ -23,7 +23,7 @@ services:
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/ejemplo-db
       SPRING_DATASOURCE_USERNAME: usuario
-      SPRING_DATASOURCE_PASSWORD: usuario123
+      SPRING_DATASOURCE_PASSWORD: 1234
 
   frontend:
     container_name: frontend_app
